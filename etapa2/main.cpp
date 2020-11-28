@@ -61,7 +61,6 @@ void write_output_fermat(string path_output1, vector<int> v) {
 
     fout.open(path_output1);
     fout << primes.size() << "\n";
-    // cout << primes.size() << "\n";
     for (prime = primes.begin(); prime < primes.end(); prime++) {
         fout << *prime << " ";
     }
@@ -75,7 +74,6 @@ void write_output_miller_rabin(string path_output2, vector<int> v) {
 
     fout.open(path_output2);
     fout << primes.size() << "\n";
-    // cout << primes.size() << "\n";
     for (prime = primes.begin(); prime < primes.end(); prime++) {
         fout << *prime << " ";
     }
