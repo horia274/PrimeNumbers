@@ -31,17 +31,17 @@ Folosesc **Ciurul lui Eratostene** pentru a genera toate numerele prime mai mici
 decat un numar dat si apoi le aleg pe cele mai mari decat o limita inferioara.
 Totodata, acest algoritm imi va da informatii si despre numerele compuse.
 
-Amestec numerele prime cu cele compuse din intervalul dorit, la care adaug si nu-
-mere Carmichael, iar aceasta lista va forma input-ul dintr-un fisier. Testul din
-ref va contine lista cu numere prime generata de ciur.
+Amestec numerele prime cu cele compuse din intervalul dorit, la care adaug si
+numere Carmichael, iar aceasta lista va forma input-ul dintr-un fisier. Testul
+din ref va contine lista cu numere prime generata de ciur.
 
 ## main.cpp
-Are forma unui checker, care va apela cei doi algoritmi generand rezultatele ob-
-tinute in fisierele de output corespunzatoare. Ulterior, va compara output-ul cu
-ref-ul, printand un mesaj in functie de corectitudine.
+Are forma unui checker, care va apela cei doi algoritmi generand rezultatele
+obtinute in fisierele de output corespunzatoare. Ulterior, va compara output-ul
+cu ref-ul, printand un mesaj in functie de corectitudine.
 
-Afisez informatii si despre timpul de executiei in *microsecunde*, al fiecarui al-
-goritm, pentru fiecare test.
+Afisez informatii si despre timpul de executiei in *microsecunde*, al fiecarui
+algoritm, pentru fiecare test.
 
 ## Algoritmii
 Codul pentru fiecare algoritm se afla in **algo1** si respectiv **algo2**. Ambii
@@ -56,6 +56,8 @@ Implementeaza **Miller-Rabin primality test**, dupa modelul de pe [GeeksforGeeks
 ## Makefile
 Contine o regula de:
 **build**, care compileaza toate fisierele .cpp;
+
 **run_tests**, care ruleaza main.cpp;
+
 **clean**, care sterge fisierele obiect si executabilul.
 
