@@ -1,52 +1,59 @@
+# Etapa 2
 
-Etapa 2:
+## Folder-ul in
+Contine 10 teste de input generate cu ajutorul lui **tests_generator**, care vor
+testa corectitudinea implementarii celor 2 algoritmi.
 
-Arhiva trebuie sa contina fisierele:
+## Folder-ul out
+Contine doua foldere, **out1** si **out2** (fiecare algoritm cu folder-ul sau)
+in care se vor scrie rezultate obtinute in urma executiei programului.
 
-* algo.h
-    * Un set minimal de funcții care rezolvă problema aleasă.
-    * Puteți adăuga funcționalități suplimentare!
-    
-* (bonus) algo.cpp
-    * Acesta va conține cea mai eficientă/versatilă implementare a funcțiilor definite in algo.h
-    * Acest fișier NU va conține o funcție main().
+Fiecare director de output, contine cate 10 fisiere corespunzatoare testelor de
+input.
 
-* Makefile 
-    * va conține obligatoriu o regulă de build care va genera
-    un fișier obiect algo.o, cu implementarea funcțiilor din algo.h
+## Folder-ul ref
+Contine 10 fisiere in care sunt trecute rezultatele corecte pentru fiecare test
+de input.
 
-* Folder 'in' cu testele de intrare  (5-10 teste)
-    * Fiecare test va fi numit "testID.in", unde ID reprezintă numărul
-    testului (e.g. test0.in)
-    * Fiecare test va fi structurat în felul următor:
-      * Pe prima linie, N (int - numărul de elemente din secvență)
-      * N numere întregi (reprezentabile pe 32 biți)
-      
-* Folder 'out' cu testele de ieșire
-    * Fiecare test va fi numit "testID.out", unde ID reprezintă numărul
-    testului (e.g. test0.out) 
-    * Fiecare test va conține M - numărul de elemente prime urmat de 
-    secvența propriu-zisă de numerele prime extrase din secvența originală.  
-        
-* Folder 'other_tests'
-    * Alte teste generate de voi (fișiere de intrare cu extensia .in, 
-    cele de ieșire cu extensia .out). Structura acestora va fi 
-    documentată in Readme.
+## tests_generator.py
+Creez cate un test de input si un fisier de tip ref dupa modelul urmator:
 
-* [Opțional] codul sursă al generatorului de teste folosit.
+*make_single_test(numar_test, limita_inferioara, limita_superioara,
+                  numar_prime, numar_compuse, numar_carmichael)*
 
-* Fisier README
-    * Numele și grupa
-    * O descriere a arhivei - ce reprezintă fiecare fișier, mai ales dacă ați adăugat
-    fișiere suplimentare.
-   
-Puteti sa alegeti voi o structura pentru solutiile propriu-zise (documentati alegerea in Readme):
+Fiecare test de input va contine *numar_prime* numere prime, *numar_compuse*
+numere compuse, *numar_carmichael* numere Carmichael (sau maximul de numere 
+prime / compuse dintr-un *inteval*), toate acestea fiind in *intervalul*
+\[limita_inferioara, limita_superioara\].
 
-De exemplu:
-* algo1.cpp 
-    * Implementarea uneia dintre solutiile propuse 
-* algo2.cpp 
-* algo3.cpp
-* ...            
-    
-     
+Folosesc **Ciurul lui Eratostene** pentru a genera toate numerele prime mai mici
+decat un numar dat si apoi le aleg pe cele mai mari decat o limita inferioara.
+Totodata, acest algoritm imi va da informatii si despre numerele compuse.
+
+Amestec numerele prime cu cele compuse din intervalul dorit, la care adaug si nu-
+mere Carmichael, iar aceasta lista va forma input-ul dintr-un fisier. Testul din
+ref va contine lista cu numere prime generata de ciur.
+
+## main.cpp
+Are forma unui checker, care va apela cei doi algoritmi generand rezultatele ob-
+tinute in fisierele de output corespunzatoare. Ulterior, va compara output-ul cu
+ref-ul, printand un mesaj in functie de corectitudine.
+
+Afisez informatii si despre timpul de executiei in *microsecunde*, al fiecarui al-
+goritm, pentru fiecare test.
+
+## Algoritmii
+Codul pentru fiecare algoritm se afla in **algo1** si respectiv **algo2**. Ambii
+algoritmi determina numerele prime dintr-o secventa de numere data.
+
+### algo1
+Implementeaza **Fermat primality test**, dupa modelul de pe [GeeksforGeeks](https://www.geeksforgeeks.org/primality-test-set-2-fermet-method/)
+
+### algo2
+Implementeaza **Miller-Rabin primality test**, dupa modelul de pe [GeeksforGeeks](https://www.geeksforgeeks.org/primality-test-set-3-miller-rabin/)
+
+## Makefile
+Contine o regula de:
+**build**, care compileaza toate fisierele .cpp;
+**run_tests**, care ruleaza main.cpp.
+
