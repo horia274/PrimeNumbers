@@ -47,13 +47,14 @@ Codul pentru fiecare algoritm se afla in **algo1** si respectiv **algo2**. Ambii
 algoritmi determina numerele prime dintr-o secventa de numere data.
 
 ### algo1
-Implementeaza **Fermat primality test**, dupa modelul de pe [GeeksforGeeks](https://www.geeksforgeeks.org/primality-test-set-2-fermet-method/)
+Implementeaza **Fermat primality test**, dupa modelul de pe [GeeksforGeeks](https://www.geeksforgeeks.org/primality-test-set-2-fermet-method/).
 
 ### algo2
-Implementeaza **Miller-Rabin primality test**, dupa modelul de pe [GeeksforGeeks](https://www.geeksforgeeks.org/primality-test-set-3-miller-rabin/)
+Implementeaza **Miller-Rabin primality test**, dupa modelul de pe [GeeksforGeeks](https://www.geeksforgeeks.org/primality-test-set-3-miller-rabin/).
 
 ## Makefile
 Contine o regula de:
 **build**, care compileaza toate fisierele .cpp;
-**run_tests**, care ruleaza main.cpp.
+**run_tests**, care ruleaza main.cpp;
+**clean**, care sterge fisierele obiect si executabilul.
 
