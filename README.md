@@ -10,8 +10,8 @@ numere data. In rezolvarea acestei probleme am folosit doi algoritmi:
 Contine o **teoretizare** a celor doi algoritmi, cuprinzand descrirea propiu-zisa,
 explicarea functionalitii, precum si timpul de executiei estimativ al fiecaruia.
 
-De asemenea, cuprinde si modalitatea de intocmire a fisierelor de test care vor ve-
-rifica corectitudinea algoritmilor, precum si o serie de referinte.
+De asemenea, cuprinde si modalitatea de intocmire a fisierelor de test care vor
+verifica corectitudinea algoritmilor, precum si o serie de referinte.
 
 ## Etapa 2
 Contine **implementarile** propriu-zise ale celor doi algoritmi, precum si un
