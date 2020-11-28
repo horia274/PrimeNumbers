@@ -55,6 +55,7 @@ Implementeaza **Miller-Rabin primality test**, dupa modelul de pe [GeeksforGeeks
 
 ## Makefile
 Contine o regula de:
+
 **build**, care compileaza toate fisierele .cpp;
 
 **run_tests**, care ruleaza main.cpp;
