@@ -54,7 +54,7 @@ Implementeaza **Fermat primality test**, dupa modelul de pe [GeeksforGeeks](http
 Implementeaza **Miller-Rabin primality test**, dupa modelul de pe [GeeksforGeeks](https://www.geeksforgeeks.org/primality-test-set-3-miller-rabin/).
 
 ## Makefile
-Contine o regula de:
+Contine reguli de:
 
 **build**, care compileaza toate fisierele .cpp;
 
