@@ -50,15 +50,21 @@ algoritmi determina numerele prime dintr-o secventa de numere data.
 ### algo1
 Implementeaza **Fermat primality test**, dupa modelul de pe [GeeksforGeeks](https://www.geeksforgeeks.org/primality-test-set-2-fermet-method/).
 
+Facand diverse teste asupra numarului de repetari pentru algoritmul Fermat, am
+considerat ca *50* sunt suficiente pentru a trece toate testele.
+
 ### algo2
 Implementeaza **Miller-Rabin primality test**, dupa modelul de pe [GeeksforGeeks](https://www.geeksforgeeks.org/primality-test-set-3-miller-rabin/).
+
+Facand diverse teste asupra numarului de repetari pentru algoritmul Miller-Rabin,
+am considerat ca *6* sunt suficiente pentru a trece toate testele.
 
 ## Makefile
 Contine reguli de:
 
-**build**, care compileaza toate fisierele .cpp;
+* **build**, care compileaza toate fisierele .cpp;
 
-**run_tests**, care ruleaza main.cpp;
+* **run_tests**, care ruleaza main.cpp;
 
-**clean**, care sterge fisierele obiect si executabilul.
+* **clean**, care sterge fisierele obiect si executabilul.
 
