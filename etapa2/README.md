@@ -1,5 +1,4 @@
 # Etapa 2
-## Ignat Andrei-Horia 324CA
 
 ## Folder-ul in
 Contine 10 teste de input generate cu ajutorul lui **tests_generator**, care vor
