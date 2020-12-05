@@ -15,7 +15,15 @@ verifica corectitudinea algoritmilor, precum si o serie de referinte.
 
 ## Etapa 2
 Contine **implementarile** propriu-zise ale celor doi algoritmi, precum si un
-**generator de teste** variate, dar si un **checker**, care compara rezultatele date de
-cei doi algorimi cu raspunsul corect (lista de numere prime din acea secventa).
+**generator de teste** variate, dar si un **checker**, care compara rezultatele date
+de cei doi algorimi cu raspunsul corect (lista de numere prime din acea secventa).
 
 Mai multe detalii despre aceasta etapa se gasesc in *README-ul* aferent.
+
+## Etapa 3
+Contine descrierea problemei, **explicarea functionalitatii** celor doi algoritmi,
+**analiza complexitatii a acestora**, precum si diverse **avantaje si dezavantaje**.
+
+De asemenea este descrisa modalitatea de concepere a testelor, precum si **rezultatele**
+obtinute in urma rularii celor doi algoritmi pe testele create, in final fiind detaliate
+**concluziile**.
