@@ -6,6 +6,8 @@ numere data. In rezolvarea acestei probleme am folosit doi algoritmi:
 
 **Miller-Rabin primality test**.
 
+Pentru mai multe detalii legate de enunt puteti accesa urmatorul [link](https://curs.upb.ro/pluginfile.php/356139/mod_resource/content/1/Tema_Analiza_Algoritmilor_2020.pdf), sectiunea 2.8.
+
 ## Etapa 1
 Contine o **teoretizare** a celor doi algoritmi, cuprinzand descrirea propiu-zisa,
 explicarea functionalitii, precum si timpul de executiei estimativ al fiecaruia.
